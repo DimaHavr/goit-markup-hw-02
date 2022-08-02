@@ -1,17 +1,160 @@
-body{
+body {
+   font-family: "Roboto", sans-serif;
+   color: var(--brand-color);
+}
+:root {
+   --brand-color: #212121;
+   --second-color: #757575;
+   --basic-color: #ffffff;
+   --hover-color: #2196f3;
+}
+.titel {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
 
-}
-.header {
-}
+/* Шапка */
 .logo {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: var(--brand-color);
+   text-decoration: none;
 }
 .logo-item {
+   color: var(--hover-color);
 }
 .nav {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   list-style: none;
 }
+
 .nav-link {
+   color: var(--brand-color);
+   text-decoration: none;
+}
+.nav .nav-link:hover,:focus {
+   color: var(--hover-color);
 }
 .contact {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+   list-style: none;
+   text-decoration: none;
 }
 .contact-link {
+   color: var(--second-color);
+   text-decoration: none;
+}
+.contact .contact-link:hover,:focus {
+   color: var(--hover-color);
+}
+
+/* Герой */
+
+.hero-titel {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--basic-color);
+}
+.hero-button {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: var(--basic-color);
+   cursor: pointer;
+}
+
+/* Особливості */
+
+.features {
+}
+.features-list {
+}
+.features-titel {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+}
+.features-text {
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--second-color);
+}
+
+/* Чим ми займаємося */
+
+.work {
+}
+
+/* Наша команда */
+
+.team {
+}
+
+.titel {
+}
+.team-name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+.team-position {
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: var(--second-color);
+}
+
+/* Підвал */
+
+.footer-logo {
+   font-family: "Raleway";
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   color: var(--basic-color);
+   text-decoration: none;
+}
+
+.address {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+.address-link {
+   color: var(--basic-color);
+   text-decoration: none;
+}
+.address-link:hover,:focus{
+   color: var(--hover-color);
+}
+.address .contact-link:hover,:focus{
+   color: var(--hover-color);
 }

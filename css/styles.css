@@ -41,10 +41,10 @@ body {
    color: var(--brand-color);
    text-decoration: none;
 }
-.nav .nav-link:hover{
+.nav-link:hover {
    color: var(--hover-color);
 }
-.nav .nav-link:focus{
+.nav-link:focus {
    color: var(--hover-color);
 }
 .contact {
@@ -59,10 +59,10 @@ body {
    color: var(--second-color);
    text-decoration: none;
 }
-.contact .contact-link:hover{
+.contact-link:hover {
    color: var(--hover-color);
 }
-.contact .contact-link:focus {
+.contact-link:focus {
    color: var(--hover-color);
 }
 
@@ -158,19 +158,12 @@ body {
    color: var(--basic-color);
    text-decoration: none;
 }
-.address-link:hover{
+.address-link:hover {
    color: var(--hover-color);
 }
-.address-link:focus{
-   color: var(--hover-color);}
-
-.address .contact-link:hover{
+.address-link:focus {
    color: var(--hover-color);
 }
-.address .contact-link:focus{
-   color: var(--hover-color);
-}
-
 /* Портфоліо */
 
 .filter-list {
@@ -185,10 +178,10 @@ body {
 .filter-button {
    cursor: pointer;
 }
-.filter-button:hover{
+.filter-button:hover {
    color: var(--basic-color);
 }
-.filter-list .filter-button:focus{
+.filter-button:focus {
    color: var(--basic-color);
 }
 

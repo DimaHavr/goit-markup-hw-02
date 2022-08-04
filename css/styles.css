@@ -16,6 +16,9 @@ body {
 ul {
    list-style: none;
 }
+a{
+   text-decoration: none;
+}
 .visually-hidden {
    position: absolute;
    white-space: nowrap;
@@ -34,7 +37,6 @@ ul {
    font-size: 36px;
    line-height: 1.16;
    text-align: center;
-   letter-spacing: 0.03em;
 }
 
 /* Шапка */
@@ -43,9 +45,7 @@ ul {
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-
    color: var(--brand-color);
-   text-decoration: none;
 }
 .logo-item {
    color: var(--hover-color);
@@ -75,11 +75,9 @@ ul {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   text-decoration: none;
 }
 .contact-link {
    color: var(--second-color);
-   text-decoration: none;
 }
 
 /* Герой */
@@ -173,7 +171,6 @@ ul {
    font-size: 26px;
    line-height: 1.19;
    color: var(--basic-color);
-   text-decoration: none;
 }
 
 .address {
@@ -183,7 +180,6 @@ ul {
 }
 .address-link {
    color: var(--basic-color);
-   text-decoration: none;
 }
 /* Портфоліо */
 

@@ -1,13 +1,34 @@
-body {
-   font-family: "Roboto", sans-serif;
-   color: var(--brand-color);
-}
 :root {
    --brand-color: #212121;
    --second-color: #757575;
    --basic-color: #ffffff;
    --hover-color: #2196f3;
+   --background: #2f303a;
 }
+
+body {
+   font-size: 14px;
+   font-family: "Roboto", sans-serif;
+   letter-spacing: 0.03em;
+   color: var(--brand-color);
+   background-color: var(--basic-color);
+}
+ul {
+   list-style: none;
+}
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
 .titel {
    font-weight: 700;
    font-size: 36px;
@@ -18,11 +39,11 @@ body {
 
 /* Шапка */
 .logo {
-   font-family: "Raleway";
+   font-family: "Raleway",sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-   letter-spacing: 0.03em;
+
    color: var(--brand-color);
    text-decoration: none;
 }
@@ -34,39 +55,38 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   list-style: none;
 }
 
 .nav-link {
    color: var(--brand-color);
    text-decoration: none;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
    color: var(--hover-color);
 }
-.nav-link:focus {
-   color: var(--hover-color);
-}
+
 .contact {
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
-   list-style: none;
    text-decoration: none;
 }
 .contact-link {
    color: var(--second-color);
    text-decoration: none;
 }
-.contact-link:hover {
-   color: var(--hover-color);
-}
-.contact-link:focus {
-   color: var(--hover-color);
-}
 
 /* Герой */
+
+.hero {
+   background-color: var(--background);
+}
 
 .hero-titel {
    font-weight: 900;
@@ -78,6 +98,7 @@ body {
    color: var(--basic-color);
 }
 .hero-button {
+   font-family: inherit;
    font-weight: 700;
    font-size: 16px;
    line-height: 1.88;
@@ -87,6 +108,13 @@ body {
    letter-spacing: 0.06em;
    color: var(--basic-color);
    cursor: pointer;
+   background-color: #188ce8;
+}
+.hero-button:hover {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-button:focus {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Особливості */
@@ -99,13 +127,11 @@ body {
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
-   letter-spacing: 0.03em;
    text-transform: uppercase;
 }
 .features-text {
    font-size: 14px;
    line-height: 1.71;
-   letter-spacing: 0.03em;
    color: var(--second-color);
 }
 
@@ -117,52 +143,47 @@ body {
 /* Наша команда */
 
 .team {
+   background-color: #f5f4fa;
+}
+.team-list-item {
+   background-color: var(--basic-color);
 }
 
-.titel {
-}
 .team-name {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
    text-align: center;
-   letter-spacing: 0.03em;
 }
 .team-position {
    font-size: 16px;
    line-height: 1.18;
    text-align: center;
-   letter-spacing: 0.03em;
    color: var(--second-color);
 }
 
 /* Підвал */
+.footer {
+   background-color: var(--background);
+}
 
 .footer-logo {
-   font-family: "Raleway";
+   font-family: "Raleway",sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-   letter-spacing: 0.03em;
    color: var(--basic-color);
    text-decoration: none;
 }
 
 .address {
-   font-weight: 400;
+   font-style: normal;
    font-size: 14px;
    line-height: 1.71;
-   letter-spacing: 0.03em;
 }
 .address-link {
    color: var(--basic-color);
    text-decoration: none;
-}
-.address-link:hover {
-   color: var(--hover-color);
-}
-.address-link:focus {
-   color: var(--hover-color);
 }
 /* Портфоліо */
 
@@ -170,20 +191,29 @@ body {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.62;
-   letter-spacing: 0.03em;
 }
 
 .filter-item {
 }
 .filter-button {
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   text-align: center;
    cursor: pointer;
+   background-color: #F5F4FA;
 }
 .filter-button:hover {
+   background-color: var(--hover-color);
    color: var(--basic-color);
 }
 .filter-button:focus {
+   background-color: var(--hover-color);
    color: var(--basic-color);
 }
+
+/* Портфоліо */
 
 .portfolio {
 }
@@ -198,6 +228,5 @@ body {
 .portfolio-text {
    font-size: 16px;
    line-height: 1.88;
-   letter-spacing: 0.03em;
    color: var(--second-color);
 }
